@@ -1,8 +1,13 @@
-
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 function TablaProductos({ productos }) {
-  const [productosEditados, setProductosEditados] = useState(productos.map(producto => ({ ...producto })));
+  const [productosEditados, setProductosEditados] = useState(
+    productos.map((producto) => ({ ...producto }))
+  );
+
+  useEffect(() => {
+    setProductosEditados(productos.map((producto) => ({ ...producto })));
+  }, [productos]);
 
   const handleInputChange = (index, columna, valor) => {
     const nuevosProductos = [...productosEditados];
@@ -29,15 +34,19 @@ function TablaProductos({ productos }) {
             <td>
               <input
                 type="text"
-                value={producto.proveedor}
-                onChange={(e) => handleInputChange(index, "proveedor", e.target.value)}
+                value={producto.proveedor || ""}
+                onChange={(e) =>
+                  handleInputChange(index, "proveedor", e.target.value)
+                }
               />
             </td>
             <td>
               <input
                 type="text"
                 value={producto.facing}
-                onChange={(e) => handleInputChange(index, "facing", e.target.value)}
+                onChange={(e) =>
+                  handleInputChange(index, "facing", e.target.value)
+                }
               />
             </td>
           </tr>
