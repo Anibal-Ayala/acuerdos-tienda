@@ -3,22 +3,47 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-light bg-light">
-      <div className="container">
-        <Link className="navbar-brand" to="/">Mi Aplicación</Link>
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <Link className="nav-link" to="/salon">Salón</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link disabled" to="/isla">Isla</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link disabled" to="/checkout">Checkout</Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <nav style={{backgroundColor: '#333', color:'white', padding: '10px', display: 'flex',justifyContent: 'space-between', alignItems:'center'}}>
+  
+<div style={{display: 'flex', alignItems: 'center'}}>
+
+
+  <Link to="/" style={{color:'white', textDecoration: 'none', fontSize:'20px', fontWeight:'bold'}}>
+Acuerdos Comerciales
+  </Link>
+
+</div>
+
+<div>
+
+  <ul style={{listStyle:'none', margin:'0', padding:'0', display:'flex'}}>
+
+
+    <li style={{margin: '0 10px'}} >
+    <Link to="/salon" style={{color: 'white', textDecoration:'none'}}>Salon</Link>
+    
+   </li>
+
+   <li style={{margin: '0 10px'}} >
+<span style={{color: 'grey', textDecoration: 'none', cursor:'default'}}>Isla</span>
+    
+   </li>
+
+
+   <li style={{margin: '0 10px'}} >
+<span style={{color: 'grey', textDecoration: 'none', cursor:'default'}}>Checkout</span>
+    
+   </li>
+
+
+  </ul>
+</div>
+  
+  
+  
+  
+  
+   </nav>
   );
 }
 

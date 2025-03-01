@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar/Navbar';
 import Salon from './components/Salon/Salon'; // Importa Salon desde la carpeta components/Salon
+import './App.css'
+
 
 function App() {
   return (
