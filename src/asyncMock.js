@@ -18,6 +18,7 @@ export const getSubcategorias = () => {
           "ENERGIZANTES",
           "WHISKY DELUXE",
           "VINOS ESPUMOSOS",
+          "COOLER",
           "YERBA",
           "CAFÉ",
           "POLVOS CHOCOLATADOS",
