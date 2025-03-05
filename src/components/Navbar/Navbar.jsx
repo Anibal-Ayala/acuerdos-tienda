@@ -25,13 +25,13 @@ Acuerdos Comerciales
    </li>
 
    <li style={{margin: '0 10px'}} >
-<span style={{color: 'grey', textDecoration: 'none', cursor:'default'}}>Isla</span>
+   <Link to="/exhibidores" style={{color: 'white', textDecoration:'none'}}>Exhibidores</Link>
     
    </li>
 
 
    <li style={{margin: '0 10px'}} >
-<span style={{color: 'grey', textDecoration: 'none', cursor:'default'}}>Checkout</span>
+   <Link to="/checkout" style={{color: 'white', textDecoration:'none'}}>Checkout</Link>
     
    </li>
 
