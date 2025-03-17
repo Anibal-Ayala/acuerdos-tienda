@@ -41,3 +41,34 @@ export const getSubcategorias = () => {
       }, 500);
     });
   };
+
+
+
+
+
+
+  export const getCajas = () => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve([
+          'CAJA 1',
+          'CAJA 2',
+          'CAJA 3',
+          'CAJA 4',
+          'CAJA 5',
+          'CAJA 6',
+          'CAJA 7',
+          'CAJA 8',
+          'CAJA 9',
+          'CAJA 10',
+          'CAJA 11',
+          'CAJA 12',
+          'CAJA 13',
+          'CAJA 14',
+          'CAJA 15',
+          'SELF',
+        ]);
+      }, 1000);
+    });
+  };
+  

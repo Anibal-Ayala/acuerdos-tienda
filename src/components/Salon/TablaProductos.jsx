@@ -61,6 +61,9 @@ function TablaProductos({ productos }) {
                   borderRadius: '5px',
                   cursor: 'pointer',
                   marginTop: '10px',
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                  margin :'5px'
                 }}
               >
                 Guardar cambios
